@@ -72,19 +72,14 @@
         }
     </style>
     @yield('styles')
-    @stack('styles')
     @livewireStyles
 </head>
 
 <body class="bg-gray-50">
     @yield('main')
-    @if (isset($slot))
-        {{ $slot }}
-    @endif
-
-    @include('page.bottomnav')
+    @include('js.index')
     @stack('js')
-
+    {{ $slot }}
     @livewireScripts
 </body>
 
