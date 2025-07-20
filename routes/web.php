@@ -14,6 +14,14 @@ Route::get('/mood', function () {
     return view('page.mood_detector');
 });
 
+Route::get('/calmzone', function () {
+    return view('page.calm_zone');
+});
+
+Route::get('/virtualpet', function () {
+    return view('page.virtual_pet');
+});
+
 Route::get('/dashboard', function () {
     return view('page.dashboard');
 });
