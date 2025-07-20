@@ -223,6 +223,9 @@ app.listen(PORT, () => {
                 </div>
             </div>
         </section>
+@endsection
+
+@section('mood_detector')
         <!-- Mood Detector Section -->
         <section id="mood-section" class="px-4 py-6 hidden">
             <div class="bg-white rounded-lg shadow-sm p-4">
@@ -314,60 +317,53 @@ app.listen(PORT, () => {
                         class="w-full bg-secondary text-white py-2 rounded-lg text-sm font-medium !rounded-button cursor-pointer">Catat
                         Mood Ini</button>
                 </div>
-            </div>
-        </section>
-        <!-- Dashboard Section -->
-        <section id="dashboard-section" class="px-4 py-6 hidden">
-            <div class="bg-white rounded-lg shadow-sm p-4 mb-6">
-                <h2 class="text-lg font-semibold text-gray-800 mb-4">Statistik Mood</h2>
-                <div class="mb-4">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="text-sm font-medium text-gray-700">Minggu Ini</h3>
-                        <button class="text-xs text-primary font-medium cursor-pointer">Lihat Bulanan</button>
-                    </div>
-                    <div class="h-48 w-full bg-gray-50 rounded-lg overflow-hidden">
-                        <img src="https://readdy.ai/api/search-image?query=clean%20and%20minimalist%20mood%20tracking%20chart%20with%20days%20of%20the%20week%20on%20x-axis%20and%20mood%20levels%20on%20y-axis%2C%20showing%20fluctuating%20emotional%20states%20throughout%20the%20week%20with%20a%20slight%20upward%20trend%2C%20using%20soft%20blue%20and%20pink%20colors%20on%20white%20background%2C%20professional%20data%20visualization%2C%20clean%20design%2C%20no%20text%20labels&width=400&height=200&seq=6&orientation=landscape"
-                            alt="Mood Chart" class="w-full h-full object-cover">
-                    </div>
-                </div>
-                <div class="grid grid-cols-4 gap-2 mb-4">
-                    <div class="bg-yellow-50 p-2 rounded-lg text-center">
-                        <div class="w-8 h-8 mx-auto flex items-center justify-center">
-                            <img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%2C%20happy%20emoji%20face%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20vibrant%20yellow%20color%20with%20soft%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20playful%20and%20friendly%20aesthetic%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look&width=40&height=40&seq=7&orientation=squarish"
-                                alt="Senang" class="w-full h-full object-contain">
-                        </div>
-                        <span class="text-xs text-gray-700 block mt-1">Senang</span>
-                        <span class="text-xs font-medium text-gray-800 block">2x</span>
-                    </div>
-                    <div class="bg-blue-50 p-2 rounded-lg text-center">
-                        <div class="w-8 h-8 mx-auto flex items-center justify-center">
-                            <img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%2C%20sad%20emoji%20face%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20soft%20blue%20color%20with%20gentle%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20emotional%20and%20sympathetic%20aesthetic%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look&width=40&height=40&seq=8&orientation=squarish"
-                                alt="Sedih" class="w-full h-full object-contain">
-                        </div>
-                        <span class="text-xs text-gray-700 block mt-1">Sedih</span>
-                        <span class="text-xs font-medium text-gray-800 block">1x</span>
-                    </div>
-                    <div class="bg-red-50 p-2 rounded-lg text-center">
-                        <div class="w-8 h-8 mx-auto flex items-center justify-center">
-                            <img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%2C%20angry%20emoji%20face%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20soft%20red%20color%20with%20gentle%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20emotional%20and%20expressive%20aesthetic%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look&width=40&height=40&seq=9&orientation=squarish"
-                                alt="Marah" class="w-full h-full object-contain">
-                        </div>
-                        <span class="text-xs text-gray-700 block mt-1">Marah</span>
-                        <span class="text-xs font-medium text-gray-800 block">1x</span>
-                    </div>
-                    <div class="bg-purple-50 p-2 rounded-lg text-center">
-                        <div class="w-8 h-8 mx-auto flex items-center justify-center">
-                            <img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%2C%20anxious%20emoji%20face%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20soft%20purple%20color%20with%20gentle%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20worried%20and%20concerned%20aesthetic%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look&width=40&height=40&seq=10&orientation=squarish"
-                                alt="Cemas" class="w-full h-full object-contain">
-                        </div>
-                        <span class="text-xs text-gray-700 block mt-1">Cemas</span>
-                        <span class="text-xs font-medium text-gray-800 block">3x</span>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-white rounded-lg shadow-sm p-4 mb-6">
+               </div>
+              </section>
+@endsection
+
+@section('calm_zone')
+        <!-- Calm Zone Section -->
+         <section id="calm-zone-section" class="px-4 py-6 hidden">
+    <div class="bg-white rounded-lg shadow-sm p-4 mb-6">
+      <h2 class="text-lg font-semibold text-gray-800 mb-4">Calm Zone & Mood Diary</h2>
+      <div class="flex space-x-2 mb-4">
+        <button id="tab-calm-breath" class="px-4 py-2 rounded-full text-sm font-medium bg-primary text-white focus:outline-none">Napas</button>
+        <button id="tab-calm-journal" class="px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-800 focus:outline-none">Jurnal</button>
+        <button id="tab-calm-affirm" class="px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-800 focus:outline-none">Afirmasi</button>
+        <button id="tab-mood-diary" class="px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-800 focus:outline-none">Mood Diary</button>
+      </div>
+      <!-- Napas -->
+      <div id="tab-content-calm-breath">
+        <div class="flex flex-col items-center">
+          <div id="breath-circle" class="w-28 h-28 mb-4 rounded-full bg-primary opacity-80 transition-all duration-400 ease-in-out"></div>
+          <div id="breath-text" class="mb-4 text-sm text-gray-700">Klik mulai untuk relaksasi</div>
+          <button id="start-breathing" class="bg-secondary text-white px-6 py-2 rounded-full font-medium text-sm">Mulai Latihan Pernapasan</button>
+        </div>
+      </div>
+      <!-- Jurnal -->
+      <div id="tab-content-calm-journal" class="hidden">
+        <form id="journal-form" class="flex flex-col items-center">
+          <textarea id="journal-text" rows="3" class="w-full border border-gray-200 rounded p-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent mb-3" placeholder="Tulis perasaanmu hari ini..."></textarea>
+          <button type="submit" class="bg-primary text-white px-6 py-2 rounded-full font-medium text-sm">Catat Jurnal</button>
+          <div id="journal-success" class="mt-3 text-green-600 text-sm hidden">Jurnal tersimpan! 🎉</div>
+        </form>
+      </div>
+      <!-- Afirmasi -->
+      <div id="tab-content-calm-affirm" class="hidden">
+        <div class="flex flex-col items-center">
+       ampu melewati hari ini."</div>
+          <button id="next-affirmation" class="bg-primary text-white px-6 py-2 rounded-full font-medium text-sm">Afirmasi Lainnya</button>
+        </div>
+      </div>
+      <!-- Mood Diary Visual -->
+      <div id="tab-content-mood-diary" class="hidden">
+        <div id="affirmation-text" class="text-lg text-primary font-semibold mb-4">"Kamu berharga dan mclass="grid grid-cols-2 md:grid-cols-4 gap-4" id="mood-diary-gallery"></div>
+      </div>
+    </div>
+        <!-- Virtual Pet Section Premium-->
+                       <div class="bg-white rounded-lg shadow-sm p-4 mb-6">
                 <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-lg font-semibold text-gray-800">Virtual Pet</h2>
+                    <h2 class="text-lg font-semibold text-gray-800">Virtual Pet for Premium</h2>
                     <div class="bg-primary bg-opacity-10 px-3 py-1 rounded-full">
                         <span class="text-xs font-medium text-primary">Level 3</span>
                     </div>
@@ -419,6 +415,60 @@ app.listen(PORT, () => {
                     </button>
                 </div>
             </div>
+         </section>
+@endsection
+
+@section('dashboard')
+        <!-- Dashboard Section -->
+        <section id="dashboard-section" class="px-4 py-6 hidden">
+            <div class="bg-white rounded-lg shadow-sm p-4 mb-6">
+                <h2 class="text-lg font-semibold text-gray-800 mb-4">Statistik Mood</h2>
+                <div class="mb-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-sm font-medium text-gray-700">Minggu Ini</h3>
+                        <button class="text-xs text-primary font-medium cursor-pointer">Lihat Bulanan</button>
+                    </div>
+                    <div class="h-48 w-full bg-gray-50 rounded-lg overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=clean%20and%20minimalist%20mood%20tracking%20chart%20with%20days%20of%20the%20week%20on%20x-axis%20and%20mood%20levels%20on%20y-axis%2C%20showing%20fluctuating%20emotional%20states%20throughout%20the%20week%20with%20a%20slight%20upward%20trend%2C%20using%20soft%20blue%20and%20pink%20colors%20on%20white%20background%2C%20professional%20data%20visualization%2C%20clean%20design%2C%20no%20text%20labels&width=400&height=200&seq=6&orientation=landscape"
+                            alt="Mood Chart" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 gap-2 mb-4">
+                    <div class="bg-yellow-50 p-2 rounded-lg text-center">
+                        <div class="w-8 h-8 mx-auto flex items-center justify-center">
+                            <img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%2C%20happy%20emoji%20face%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20vibrant%20yellow%20color%20with%20soft%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20playful%20and%20friendly%20aesthetic%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look&width=40&height=40&seq=7&orientation=squarish"
+                                alt="Senang" class="w-full h-full object-contain">
+                        </div>
+                        <span class="text-xs text-gray-700 block mt-1">Senang</span>
+                        <span class="text-xs font-medium text-gray-800 block">2x</span>
+                    </div>
+                    <div class="bg-blue-50 p-2 rounded-lg text-center">
+                        <div class="w-8 h-8 mx-auto flex items-center justify-center">
+                            <img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%2C%20sad%20emoji%20face%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20soft%20blue%20color%20with%20gentle%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20emotional%20and%20sympathetic%20aesthetic%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look&width=40&height=40&seq=8&orientation=squarish"
+                                alt="Sedih" class="w-full h-full object-contain">
+                        </div>
+                        <span class="text-xs text-gray-700 block mt-1">Sedih</span>
+                        <span class="text-xs font-medium text-gray-800 block">1x</span>
+                    </div>
+                    <div class="bg-red-50 p-2 rounded-lg text-center">
+                        <div class="w-8 h-8 mx-auto flex items-center justify-center">
+                            <img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%2C%20angry%20emoji%20face%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20soft%20red%20color%20with%20gentle%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20emotional%20and%20expressive%20aesthetic%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look&width=40&height=40&seq=9&orientation=squarish"
+                                alt="Marah" class="w-full h-full object-contain">
+                        </div>
+                        <span class="text-xs text-gray-700 block mt-1">Marah</span>
+                        <span class="text-xs font-medium text-gray-800 block">1x</span>
+                    </div>
+                    <div class="bg-purple-50 p-2 rounded-lg text-center">
+                        <div class="w-8 h-8 mx-auto flex items-center justify-center">
+                            <img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%2C%20anxious%20emoji%20face%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20soft%20purple%20color%20with%20gentle%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20worried%20and%20concerned%20aesthetic%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look&width=40&height=40&seq=10&orientation=squarish"
+                                alt="Cemas" class="w-full h-full object-contain">
+                        </div>
+                        <span class="text-xs text-gray-700 block mt-1">Cemas</span>
+                        <span class="text-xs font-medium text-gray-800 block">3x</span>
+                    </div>
+                </div>
+            </div>
+
             <div class="bg-white rounded-lg shadow-sm p-4">
                 <h2 class="text-lg font-semibold text-gray-800 mb-4">Aktivitas Rekomendasi</h2>
                 <div class="space-y-3">
@@ -473,6 +523,9 @@ app.listen(PORT, () => {
                 </div>
             </div>
         </section>
+@endsection
+
+@section('community')
         <!-- Community Section -->
         <section id="community-section" class="px-4 py-6 hidden">
             <div class="bg-white rounded-lg shadow-sm p-4 mb-6">
@@ -601,6 +654,9 @@ app.listen(PORT, () => {
                 <i class="ri-add-fill ri-xl"></i>
             </button>
         </section>
+@endsection
+
+@extends('layouts.app')
         <!-- Bottom Navigation -->
         <nav class="fixed bottom-0 w-full bg-white border-t border-gray-200 px-2 py-2 flex justify-between z-50">
             <button id="nav-home"
@@ -718,8 +774,7 @@ app.listen(PORT, () => {
                             </div>
                             <h3 class="text-xl font-semibold text-gray-800 mb-2">Dashboard Analisis</h3>
                             <p class="text-gray-600">Visualisasi perjalanan emosional Anda dengan analisis
-                                komprehensif dan wawasan yang dapat menyelesaikan masalah Anda, serta hewan
-                                peliharaan virtual pilihan Anda.</p>
+                                komprehensif dan wawasan yang dapat menyelesaikan masalah Anda.</p>
                         </div>
                         <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
                             <div
