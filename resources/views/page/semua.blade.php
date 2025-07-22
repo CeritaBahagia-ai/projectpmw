@@ -360,10 +360,14 @@ app.listen(PORT, () => {
         <div id="affirmation-text" class="text-lg text-primary font-semibold mb-4">"Kamu berharga dan mclass="grid grid-cols-2 md:grid-cols-4 gap-4" id="mood-diary-gallery"></div>
       </div>
     </div>
-        <!-- Virtual Pet Section Premium-->
-                       <div class="bg-white rounded-lg shadow-sm p-4 mb-6">
-                <div class="flex justify-between items-center mb-4">
-                    <h2 class="text-lg font-semibold text-gray-800">Virtual Pet for Premium</h2>
+    </section>
+    @endsection
+
+    @section('virtual_pet')
+         <!-- Virtual Pet Section -->
+         <section id="virtual-pet-section" class="px-4 py-6 hidden">
+            <div class="bg-white rounded-lg shadow-sm p-4 mb-6">
+                <h2 class="text-lg font-semibold text-gray-800 mb-4">Virtual Pet</h2>
                     <div class="bg-primary bg-opacity-10 px-3 py-1 rounded-full">
                         <span class="text-xs font-medium text-primary">Level 3</span>
                     </div>
