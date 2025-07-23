@@ -1,7 +1,7 @@
 @extends('template.index')
 
 @section('styles')
-    {{ <style>
+     <style>
       body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -73,11 +73,11 @@ footer {
     overflow: hidden;
     border-radius: 16px;
 }
-    </style> }}
+    </style> 
 @endsection
 
 @push('js')
-    {{ <script>
+    <script>
       const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -139,7 +139,7 @@ const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server Ceritia berjalan di http://localhost:${PORT}`);
 });
-    </script> }}
+    </script> 
 @endpush
 
 @section('main')
