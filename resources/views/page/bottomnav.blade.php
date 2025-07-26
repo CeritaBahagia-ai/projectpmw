@@ -1,5 +1,5 @@
 @section('styles')
-    {{ <style>
+    <style>
       body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -71,11 +71,11 @@ footer {
     overflow: hidden;
     border-radius: 16px;
 }
-    </style> }}
+    </style> 
 @endsection
 
 @push('js')
-    {{ <script>
+     <script>
       const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -137,7 +137,7 @@ const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server Ceritia berjalan di http://localhost:${PORT}`);
 });
-    </script> }}
+    </script> 
 @endpush
 
 <!-- Bottom Navigation -->
@@ -159,6 +159,12 @@ app.listen(PORT, () => {
 <i class="ri-emotion-line ri-lg"></i>
 </div>
 <span class="text-xs mt-1">Mood</span>
+</button>
+<button id="nav-dashboard" class="flex flex-col items-center justify-center w-1/4 text-gray-500 cursor-pointer">
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-calmness-line ri-lg"></i>
+</div>
+<span class="text-xs mt-1">Calm Zone</span>
 </button>
 <button id="nav-dashboard" class="flex flex-col items-center justify-center w-1/4 text-gray-500 cursor-pointer">
 <div class="w-6 h-6 flex items-center justify-center">

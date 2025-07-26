@@ -148,6 +148,8 @@ app.listen(PORT, () => {
     <header class="fixed top-0 w-full bg-white shadow-sm z-50 px-4 py-3 flex justify-between items-center">
         <div class="flex items-center">
             <h1 class="text-2xl font-bold text-primary tracking-tight">Ceritia</h1>
+            <img src="pictures/logo-ceritia.png" alt="Logo Ceritia"
+     class="w-12 h-12 rounded-full shadow-md" />
         </div>
         <div class="flex items-center space-x-2">
             <div class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full overflow-hidden">

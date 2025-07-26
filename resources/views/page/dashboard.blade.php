@@ -1,5 +1,5 @@
 @section('styles')
-    {{ <style>
+    <style>
       body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -71,11 +71,11 @@ footer {
     overflow: hidden;
     border-radius: 16px;
 }
-    </style> }}
+    </style> 
 @endsection
 
 @push('js')
-    {{ <script>
+    <script>
       const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -137,7 +137,7 @@ const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server Ceritia berjalan di http://localhost:${PORT}`);
 });
-    </script> }}
+    </script> 
 @endpush
 
 <!-- Dashboard Section -->
@@ -184,56 +184,7 @@ app.listen(PORT, () => {
 </div>
 </div>
 </div>
-<div class="bg-white rounded-lg shadow-sm p-4 mb-6">
-<div class="flex justify-between items-center mb-4">
-<h2 class="text-lg font-semibold text-gray-800">Virtual Pet</h2>
-<div class="bg-primary bg-opacity-10 px-3 py-1 rounded-full">
-<span class="text-xs font-medium text-primary">Level 3</span>
-</div>
-</div>
-<div class="pet-container bg-gradient-to-b from-blue-50 to-purple-50 p-4 flex flex-col items-center mb-4">
-<img src="https://readdy.ai/api/search-image?query=cute%203D%20cartoon%20pet%2C%20small%20blue%20cat-like%20creature%20with%20big%20eyes%2C%20friendly%20appearance%2C%20playful%20pose%2C%20standing%20on%20its%20hind%20legs%2C%20soft%20fur%20texture%2C%20adorable%20face%20with%20a%20small%20smile%2C%20detailed%20rendering%2C%20clean%20white%20background%2C%20centered%20composition%2C%20digital%20pet%20character%20design%2C%20high%20quality%203D%20rendering&width=200&height=200&seq=11&orientation=squarish" alt="Virtual Pet" class="w-32 h-32 object-contain mb-3">
-<h3 class="text-base font-medium text-gray-800">Berry</h3>
-<p class="text-xs text-gray-600 mb-3">Hewan peliharaan virtualmu</p>
-<div class="w-full space-y-2">
-<div>
-<div class="flex justify-between text-xs mb-1">
-<span class="text-gray-600">Kesehatan</span>
-<span class="text-gray-800 font-medium">85%</span>
-</div>
-<div class="w-full bg-gray-200 rounded-full h-2">
-<div class="bg-green-400 h-2 rounded-full" style="width: 85%"></div>
-</div>
-</div>
-<div>
-<div class="flex justify-between text-xs mb-1">
-<span class="text-gray-600">Kebahagiaan</span>
-<span class="text-gray-800 font-medium">70%</span>
-</div>
-<div class="w-full bg-gray-200 rounded-full h-2">
-<div class="bg-yellow-400 h-2 rounded-full" style="width: 70%"></div>
-</div>
-</div>
-<div>
-<div class="flex justify-between text-xs mb-1">
-<span class="text-gray-600">Energi</span>
-<span class="text-gray-800 font-medium">60%</span>
-</div>
-<div class="w-full bg-gray-200 rounded-full h-2">
-<div class="bg-blue-400 h-2 rounded-full" style="width: 60%"></div>
-</div>
-</div>
-</div>
-</div>
-<div class="flex space-x-3">
-<button class="flex-1 bg-primary text-white py-2 rounded-lg text-sm font-medium flex items-center justify-center !rounded-button cursor-pointer">
-<i class="ri-heart-fill mr-1"></i> Beri Makan
-</button>
-<button class="flex-1 bg-secondary text-white py-2 rounded-lg text-sm font-medium flex items-center justify-center !rounded-button cursor-pointer">
-<i class="ri-gamepad-fill mr-1"></i> Bermain
-</button>
-</div>
-</div>
+
 <div class="bg-white rounded-lg shadow-sm p-4">
 <h2 class="text-lg font-semibold text-gray-800 mb-4">Aktivitas Rekomendasi</h2>
 <div class="space-y-3">
