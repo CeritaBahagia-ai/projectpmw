@@ -1,4 +1,7 @@
-   @section('styles')
+<?php
+@vite(['resources/css/app.css', 'resources/js/app.js'])
+?>
+@section('styles')
     <style>
       body {
     font-family: Arial, sans-serif;

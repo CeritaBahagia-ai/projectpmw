@@ -1,3 +1,6 @@
+<?php
+@vite(['resources/css/app.css', 'resources/js/app.js'])
+?>
 @section('styles')
   <style>
       body {
