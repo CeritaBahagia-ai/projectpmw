@@ -1,14 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use \App\Livewire\Chat;
 
 Route::get('/', function () {
     return view('page.home');
-});
+})->name('home');
 
-Route::get('/chat', function () {
-    return view('page.chat');
-});
+Route::get('/chat', Chat::class)->name('chat');
 
 Route::get('/mood', function () {
     return view('page.mood_detector');
